@@ -1,6 +1,6 @@
 # PLAI LaTeX Templates
 
-This repository holds the main class file as well as example files for seminar reports and (eventually) Bachelor's and Master's theses at the Chair of Programming Languages and Artificial Intelligence at the Institute of Informatics of LMU Munich, Germany.
+This repository holds the main class file as well as example files for seminar reports and (eventually) Bachelor's and Master's theses at the [Chair of Programming Languages and Artificial Intelligence](https://plai.ifi.lmu.de) at the [Institute of Informatics](https://www.ifi.lmu.de) of [LMU Munich](https://www.lmu.de), Germany.
 
 ## Usage
 
