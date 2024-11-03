@@ -1,0 +1,201 @@
+\documentclass[thesis]{plai}
+
+\usepackage{tabularx}
+
+\usepackage{lipsum}
+
+\usepackage{graphicx}
+
+\usepackage{fancyhdr}
+
+\usepackage{microtype}
+
+\usepackage{glossaries}
+\makeglossaries
+\input{pages/glossary}
+
+% ---------------------------------------------- %
+\pretitle{}
+\posttitle{}
+\title{
+    \begin{center}
+        \bfseries\LARGE
+        Thesis Title
+    \end{center}
+}
+\preauthor{}
+\postauthor{}
+\author{
+    \begin{center}
+        \large
+        Author's name
+    \end{center}
+}
+\predate{}
+\postdate{}
+\date{\relax}
+
+% ---------------------------------------------- %
+\begin{document}
+
+
+\begin{center}
+    \uppercase{Ludwig-Maximilians-Universität München}
+\end{center}
+
+\begin{center}
+    \uppercase{Chair of Programming Languages and Artificial Intelligence}
+\end{center}
+
+\vspace*{10mm}
+
+\begin{center}
+    \includegraphics[height=40mm]{sigillum.png}
+\end{center}
+
+\vspace*{10mm}
+
+{\let\newpage\relax\maketitle}
+
+\thispagestyle{empty}
+
+\begin{center}
+    \begin{large}
+        \begin{Large}
+            Thesis type (Bachelor's Thesis / Master's Thesis, \ldots)\\
+        \end{Large}
+        in course type (Computer Science, Computer Science plus Mathematics, \ldots)\\
+    \end{large}
+\end{center}
+
+\vspace{1cm}
+
+\begin{center}
+    \begin{large}
+        Supervisor: Prof. Dr. Johannes Kinder\\
+    \end{large}
+\end{center}
+
+\begin{center}
+    \begin{large}
+        Advisor: Advisor's name\\
+    \end{large}
+\end{center}
+
+
+\begin{center}
+    \begin{large}
+        Submission Date: \today{}\\
+    \end{large}
+\end{center}
+
+\vspace{1,5cm}
+
+\input{pages/disclaimer}
+
+\input{pages/acknowledgements}
+
+\input{pages/abstract}
+
+\newpage
+\tableofcontents
+\newpage
+
+\setcounter{page}{1}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+% ---------------------------------------------- %
+\section{Introduction}
+\label{sec:introduction}
+
+\input{pages/introduction}
+
+% ---------------------------------------------- %
+\section{Background}
+\label{sec:background}
+
+\input{pages/background}
+
+% ---------------------------------------------- %
+\section{Overview}
+\label{sec:overview}
+
+\input{pages/overview}
+
+% ---------------------------------------------- %
+\section{Main Contents}
+\label{sec:phrasing}
+
+\lipsum[2-3]
+
+\begin{figure}[t]
+\begin{lstlisting}[language=Python]
+def foo():
+    return 42   # the answer to everything
+
+def bar():
+    return f'The answer is: {foo()}'
+\end{lstlisting}
+\caption{A simple example of a program. Figure captions go below.}
+\label{fig:example-program}
+\end{figure}
+
+\autoref{fig:example-program} shows a simple example of a program.
+It is easy to see that the program is correct, as it returns the correct result.
+We can also use the glossary here, \gls{plai}.
+
+% ---------------------------------------------- %
+\section{More Main Contents}
+\label{sec:transfer}
+
+\lipsum[2-3]
+
+
+% ---------------------------------------------- %
+\section{Remaining Main Contents}
+\label{sec:remaining}
+
+\lipsum[2-3]
+
+% ---------------------------------------------- %
+\section{Evaluation}
+\label{sec:evaluation}
+
+\input{pages/evaluation}
+
+% ---------------------------------------------- %
+\section{Related Work}
+\label{sec:related-work}
+
+\input{pages/related}
+
+% ---------------------------------------------- %
+\section{Conclusion}
+\label{sec:conclusion}
+
+\input{pages/conclusion}
+
+% ---------------------------------------------- %
+\bibliographystyle{plainnat}
+\bibliography{bibliography}
+
+% ---------------------------------------------- %
+\pagebreak
+
+\input{pages/appendix}
+
+\pagebreak
+
+\microtypesetup{protrusion=false}
+\listoffigures{}
+\listoftables{}
+\microtypesetup{protrusion=true}
+
+\pagebreak
+
+\printglossaries
+
+\end{document}

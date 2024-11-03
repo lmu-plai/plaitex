@@ -39,7 +39,6 @@
     \renewcommand*{\subsubsectionautorefname}{Section}
     \renewcommand*{\paragraphautorefname}{Paragraph}
   }
-  \ClassError{plai}{Thesis option not implemented yet}{}
 }
 
 \let\@matrikelnummer\relax
