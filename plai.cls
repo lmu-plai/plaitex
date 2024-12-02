@@ -50,13 +50,17 @@
 
 
 % Set the default class option
-\ExecuteOptions{seminar}
+%\ExecuteOptions{seminar}
 
 % Process the class options
 \ProcessOptions\relax
 
 % Define the document class based on the selected option
-\LoadClass[a4paper,11pt]{article}
+\ifx\@seminar\@undefined
+  \LoadClass[a4paper,11pt]{report} % Use 'report' for thesis
+\else
+  \LoadClass[a4paper,11pt]{article} % Use 'article' for seminar
+\fi
 
 % Set the page margins
 \RequirePackage[left=30mm,right=30mm,top=30mm,bottom=40mm]{geometry}
