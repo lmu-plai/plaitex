@@ -132,18 +132,18 @@
 \chapter{Main Contents}
 \label{sec:phrasing}
 
-\lipsum[2-3]
+\lipsum[2-8]
 
 \begin{figure}[t]
-\begin{lstlisting}[language=Python]
-def foo():
-    return 42   # the answer to everything
+    \begin{lstlisting}[language=Python, gobble=4]
+    def foo():
+        return 42   # the answer to everything
 
-def bar():
-    return f'The answer is: {foo()}'
-\end{lstlisting}
-\caption{A simple example of a program. Figure captions go below.}
-\label{fig:example-program}
+    def bar():
+        return f'The answer is: {foo()}'
+    \end{lstlisting}
+    \caption{A simple example of a program. Figure captions go below.}
+    \label{fig:example-program}
 \end{figure}
 
 \autoref{fig:example-program} shows a simple example of a program.
@@ -186,18 +186,16 @@ We can also use the glossary here, \gls{plai}.
 \bibliography{bibliography}
 
 % ---------------------------------------------- %
-\pagebreak
+\chapter*{Appendix}
+\label{sec:appendix}
 
 \input{pages/appendix}
 
-\pagebreak
-
+% ---------------------------------------------- %
 \microtypesetup{protrusion=false}
 \listoffigures{}
 \listoftables{}
 \microtypesetup{protrusion=true}
-
-\pagebreak
 
 \printglossaries
 
