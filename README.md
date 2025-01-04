@@ -8,4 +8,7 @@ This repository holds the main class file as well as example files for seminar r
 
 ## Status
 
-As of November 2024, a thesis template has been included together with the seminar style already implemented.
+As of January 2025, the following are implemented:
+- seminar style
+- thesis template
+- slides template (`.key`, `.pptx`, `.pdf`)
