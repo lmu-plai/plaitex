@@ -34,6 +34,7 @@
 }
 \DeclareOption{thesis}{%
   \AtBeginDocument{%
+    \renewcommand*{\chapterautorefname}{Chapter}
     \renewcommand*{\sectionautorefname}{Section}
     \renewcommand*{\subsectionautorefname}{Section}
     \renewcommand*{\subsubsectionautorefname}{Section}
@@ -64,6 +65,9 @@
 
 % Set the page margins
 \RequirePackage[left=30mm,right=30mm,top=30mm,bottom=40mm]{geometry}
+
+\AtBeginDocument{\setlength{\parindent}{1.5em}}
+\AtBeginDocument{\setlength{\parskip}{0pt plus1pt}}
 
 \RequirePackage{libertine}
 \RequirePackage{inconsolata}
@@ -96,33 +100,39 @@
 
 \usepackage{listings}
 
-% General listings style
-\lstset{
-    basicstyle=\footnotesize\ttfamily,
-    lineskip=0pt,
-    basewidth=.5em,
-    breaklines=false,
-    showstringspaces=false,
-    tabsize=2,
-    keywordstyle=\bfseries\color{lmublue},
-    emphstyle=\color{lmublack},
-    stringstyle=\color{lmured},
-    commentstyle=\color{lmugreen},
-    numbers=left,
-    numberstyle=\scriptsize\color{lmuhalfgray}\ttfamily,
-    numbersep=10pt,
-    frame=l,
-    framesep=5pt, % space between frame and text
-    framextopmargin=0,
-    framexbottommargin=0,
-    framerule=0.5pt,
-    rulecolor=\color{lmuhalfgray},
-    xleftmargin=20pt, % indent of frame
-    captionpos=b,
-    escapeinside={(@}{@)},
-    aboveskip=0pt,
-    belowskip=0pt,
+\lstdefinestyle{plai}{
+  basicstyle=\ttfamily,
+  lineskip=0pt,
+  basewidth=.5em,
+  breaklines=false,
+  tabsize=2,
+  xleftmargin=0cm,                     % Left margin
+  xrightmargin=0cm,                    % Right margin
+  frame=l,
+  framesep=5pt, % space between frame and text
+  framextopmargin=0,
+  framexbottommargin=0,
+  framerule=0.5pt,
+  showstringspaces=false,
+  %  framerule=1pt,
+  xleftmargin=20pt, % indent of frame
+  captionpos=b, 
+  aboveskip=0pt,
+  belowskip=0pt,
+  keywordstyle=\bfseries\color{lmublue},
+  emphstyle=\color{lmublack},
+  stringstyle=\color{lmured},
+  commentstyle=\color{lmugreen},
+  numbers=left,
+  numberstyle=\scriptsize\color{lmuhalfgray}\ttfamily,
+  numbersep=10pt,
+  rulecolor=\color{lmuhalfgray},
 }
+
+\lstset{
+  style={plai},
+}
+
 
 % Custom title in bold
 \RequirePackage{titling}

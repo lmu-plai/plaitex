@@ -13,9 +13,6 @@
 
 \usepackage{microtype}
 
-\usepackage{glossaries}
-\makeglossaries
-\input{pages/glossary}
 
 % ---------------------------------------------- %
 \pretitle{}
@@ -65,9 +62,9 @@
 \begin{center}
     \begin{large}
         \begin{Large}
-            Thesis type (Bachelor's Thesis / Master's Thesis, \ldots)\\
+            THESIS\_TYPE (Bachelor's Thesis / Master's Thesis, \ldots)\\
         \end{Large}
-        in course type (Computer Science, Computer Science plus Mathematics, \ldots)\\
+        in COURSE\_TYPE (Computer Science, Computer Science plus Mathematics, \ldots)\\
     \end{large}
 \end{center}
 
@@ -148,7 +145,6 @@
 
 \autoref{fig:example-program} shows a simple example of a program.
 It is easy to see that the program is correct, as it returns the correct result.
-We can also use the glossary here, \gls{plai}.
 
 % ---------------------------------------------- %
 \chapter{More Main Contents}
@@ -186,17 +182,15 @@ We can also use the glossary here, \gls{plai}.
 \bibliography{bibliography}
 
 % ---------------------------------------------- %
-\chapter*{Appendix}
-\label{chapter:appendix}
+\appendix
 
 \input{pages/appendix}
 
 % ---------------------------------------------- %
-\microtypesetup{protrusion=false}
-\listoffigures{}
-\listoftables{}
-\microtypesetup{protrusion=true}
-
-\printglossaries
+% Optionally lists of figures / tables, if there are many
+% \microtypesetup{protrusion=false}
+% \listoffigures{}
+% \listoftables{}
+% \microtypesetup{protrusion=true}
 
 \end{document}
