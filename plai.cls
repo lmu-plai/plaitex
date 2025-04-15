@@ -155,6 +155,7 @@
 
 \RequirePackage{booktabs}
 \RequirePackage[labelfont=bf,margin=10pt,justification=centering]{caption} 
+\RequirePackage{microtype}
 
 
 \endinput
