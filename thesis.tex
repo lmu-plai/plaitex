@@ -114,9 +114,27 @@
 
 \cleardoublepage
 
-\input{pages/acknowledgements}
+\chapter*{Acknowledgments}
 
-\input{pages/abstract}
+I would like to express my heartfelt gratitude to everyone who has supported me throughout the journey of this thesis.
+Special thanks to my advisor, colleagues, and friends for their invaluable guidance and encouragement.
+
+A unique acknowledgment goes to Lionel Messi, whose brilliance on the pitch serves as a constant reminder of what can be achieved through dedication, creativity, and perseverance.
+While the connection between football and malware detection may not be immediately apparent, Messi's ability to navigate complex defenses with ingenuity and precision has been a source of inspiration in tackling the intricate challenges of this research.
+
+Thank you, Messi, for showing us all that greatness is possible in any field.
+
+
+\chapter*{Abstract}
+
+Lionel Messi, widely regarded as one of the greatest soccer players of all time, has transformed the modern game through his unparalleled skill, vision, and dedication.
+
+Born in Rosario, Argentina, Messi began his career at FC Barcelona, where he spent over two decades and achieved unprecedented success, including ten La Liga titles, seven Copa del Rey titles, and four UEFA Champions League trophies.
+Known for his agility, dribbling prowess, and goal-scoring ability, he has consistently set records, including the most goals scored for a single club and the most Ballon d'Or awards won.
+
+Messi's transition to Paris Saint-Germain in 2021 and subsequent contributions to the Argentine national team---culminating in Argentina's 2022 FIFA World Cup victory---underscored his enduring influence on both club and international soccer.
+Beyond his on-field achievements, Messi's humility and sportsmanship have earned him admiration worldwide, cementing his legacy not only as an exceptional athlete but as an iconic figure who has inspired generations of fans and aspiring players alike.
+
 
 \tableofcontents
 
@@ -128,19 +146,62 @@
 \chapter{Introduction}
 \label{chapter:introduction}
 
-\input{pages/introduction}
+The topic at hand is an important problem discussed several times in the recent literature~\cite{oakland23-xfl,spmag23-mlmalware,cryptosec11}. Industry requires a solution to this problem, as it is a major bottleneck in the development of new products~\cite{statemerging-patent}. As \citet{conformance-testing-arxiv} point out, it also is a major challenge in the field of conformance testing. 
+
+\lipsum[2-4]
+
+In particular, this thesis makes the following contributions:
+\begin{itemize}
+    \item We define the problem of abc as an instance of xyz~(\autoref{chapter:content1}).
+    \item We review the literature on xyz and show how corresponding solutions can be transferred to abc, following the example of def~(\autoref{chapter:content2}).
+    \item We demonstrate how to encode a specific example of abc to WizWoz, an implementation of def~(\autoref{chapter:content3}), and confirm that it effectively solves the problem~(\autoref{chapter:evaluation}).
+\end{itemize}
+
 
 % ---------------------------------------------- %
 \chapter{Background}
 \label{chapter:background}
 
-\input{pages/background}
+We begin by introducing the background on important tool~(\autoref{sec:tool}), before reviewing the state of the art in measuring important concept~(\autoref{sec:concept}).
+
+\section{Important Tool}
+\label{sec:tool}
+
+\lipsum[2-4]
+
+\section{Important Concept}
+\label{sec:concept}
+
+\lipsum[2-4]
+
 
 % ---------------------------------------------- %
 \chapter{Overview}
 \label{chapter:overview}
 
-\input{pages/overview}
+Here we can make a reference to a figure.
+It is as simple as doing this, \autoref{fig:plai-mascot}.
+We can also reference the other figure, \autoref{fig:plai-unicorn}.
+As you can see, the figures are placed at the top and bottom of the page, respectively.
+
+\lipsum[1-5]
+
+\begin{figure}[t]
+    \begin{center}
+        \includegraphics[height=40mm]{ca-plai-bara.png}
+    \end{center}
+    \caption{Our mascot, the cutest capybara in the entire universe.}
+    \label{fig:plai-mascot}
+\end{figure}
+
+\begin{figure}[t]
+    \begin{center}
+        \includegraphics[height=40mm]{ca-plai-corn.png}
+    \end{center}
+    \caption{Our mascot riding a unicorn, because why not?}
+    \label{fig:plai-unicorn}
+\end{figure}
+
 
 % ---------------------------------------------- %
 \chapter{Main Contents}
@@ -180,19 +241,62 @@ It is easy to see that the program is correct, as it returns the correct result.
 \chapter{Evaluation}
 \label{chapter:evaluation}
 
-\input{pages/evaluation}
+\lipsum[2-4]
+
+\autoref{tab:results} shows the results of the evaluation.
+As can be seen, Method 1 outperforms Method 2.
+This is in line with the results of \citet{phdthesis-kinder}, who also found that Method 1 is superior to Method 2.
+All of this allows us to answer our proposed research question.
+
+\begin{table}[t]
+    \centering
+    \caption{Results of the evaluation. Table captions go above.}
+    \label{tab:results}
+    \begin{tabularx}{.7\linewidth}{Xrr}
+        \toprule
+        \textbf{Method} & \textbf{Precision} & \textbf{Recall} \\
+        \midrule
+        Method 1 & 0.42 & 0.23 \\
+        Method 2 & 0.23 & 0.42 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\lipsum[2-4]
+
 
 % ---------------------------------------------- %
 \chapter{Related Work}
 \label{chapter:related-work}
 
-\input{pages/related}
+Here we discuss related work.
+During the development of your thesis, you will have to read a lot of papers and articles.
+Aim to understand the state of the art in your field and how your work fits into it.
+Not only you should summarize the papers you have read, but also critically evaluate them.
+Attempt to answer some of the following questions.
+
+\begin{itemize}
+    \item What are the strengths and weaknesses of the papers?
+    \item Which are their limitations?
+    \item How does your work compare to them?
+    \item Are there any open questions in the field?
+\end{itemize}
+
+\lipsum[4-5]
+
 
 % ---------------------------------------------- %
 \chapter{Conclusion}
 \label{chapter:conclusion}
 
-\input{pages/conclusion}
+The end of the journey.
+Here we should summarize the main contributions of the thesis.
+It is important to highlight how your work contributes to the field.
+Suggest future research directions that could be valuable and interesting.
+This is what most readers will remember from your thesis, so be clear and concise.
+
+\lipsum[8]
+
 
 % ---------------------------------------------- %
 \bibliographystyle{plainnat}
@@ -201,7 +305,20 @@ It is easy to see that the program is correct, as it returns the correct result.
 % ---------------------------------------------- %
 \appendix
 
-\input{pages/appendix}
+\chapter{Detailed Results}
+
+If there is material that you want to include, but it does not fit into the thesis itself, it may belong into the appendix.
+Something like a detailed description of a specific algorithm, a long table with results from an experiment, or an interesting discussion that does not fit into the main narrative of your work.
+
+Appendices are structured like chapters, possibly including sections, subsections, tables, images etc.
+
+\chapter{Specific Example, Case Study etc.}
+
+\section{First Example}
+\lipsum[1]
+
+\section{Second Example}
+\lipsum[2]
 
 % ---------------------------------------------- %
 % Optionally lists of figures / tables, if there are many
