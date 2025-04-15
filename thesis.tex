@@ -38,6 +38,8 @@
 % ---------------------------------------------- %
 \begin{document}
 
+\pagenumbering{roman}
+
 
 \begin{center}
     \uppercase{Ludwig-Maximilians-Universität München}
@@ -89,23 +91,38 @@
     \end{large}
 \end{center}
 
-\vspace{1,5cm}
+\cleardoublepage
 
-\input{pages/disclaimer}
+\vspace*{0.55\textheight}
+\noindent
+\begin{center}
+    {\large\textbf{Declaration}}
+\end{center}
+
+\begin{flushleft}
+    I hereby confirm that this (Bachelor's Thesis / Master's Thesis, \ldots) is my own work, and that I have used no sources or aids other than those indicated. Passages that are taken either verbatim or in essence from other works are clearly marked as such and referenced accordingly.
+
+    \makeatother
+
+    \vspace{15mm}
+    \noindent
+
+    Munich, \today{}
+
+    Author's name
+\end{flushleft}
+
+\cleardoublepage
 
 \input{pages/acknowledgements}
 
 \input{pages/abstract}
 
-\newpage
 \tableofcontents
-\newpage
 
+\cleardoublepage
+\pagenumbering{arabic}
 \setcounter{page}{1}
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[R]{\thepage}
-\renewcommand{\headrulewidth}{0pt}
 
 % ---------------------------------------------- %
 \chapter{Introduction}
